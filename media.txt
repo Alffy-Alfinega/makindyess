@@ -1,0 +1,461 @@
+================================================================================
+MAKINDYE SECONDARY SCHOOL - MEDIA ASSET DOCUMENTATION
+================================================================================
+Last Updated: 2024
+This file contains a comprehensive mapping of all image and video placeholder 
+locations across the Makindye Secondary School website. Use this guide to 
+understand where each media asset should be placed.
+
+================================================================================
+GENERAL GUIDELINES
+================================================================================
+
+Directory Structure:
+- /media/hero/         - Homepage hero section images
+- /media/about/        - About page and leadership images
+- /media/academics/    - Academic programs and facilities
+- /media/admissions/   - Admissions-related imagery
+- /media/news/         - News, events, and announcements
+- /media/resources/    - Learning resources and facilities
+- /media/contact/      - Campus location and building images
+
+Supported Formats:
+- IMAGES: JPG, PNG (JPG preferred for performance)
+- VIDEOS: MP4, WebM
+- Recommended: Compress images to <300KB using TinyPNG or similar
+
+Naming Convention:
+- Use lowercase with hyphens: hero-main.jpg, principal-portrait.jpg
+- Include descriptive names for clarity
+- Version numbers optional: image-name-v2.jpg
+
+Accessibility Requirements:
+- All images must have descriptive alt text in HTML
+- Video content should include captions/subtitles where applicable
+- Use semantic HTML with proper <img> and <figure> elements
+
+Performance Optimization:
+- Hero images: Max 1920x1080px (landscape)
+- Portrait photos: Max 500x600px
+- Thumbnails: Max 300x300px
+- Use CSS max-width constraints to limit display size
+
+================================================================================
+1. HOMEPAGE (index.html) - HERO SECTION
+================================================================================
+
+Location: Hero banner (full-width background)
+File: media/hero/hero-bg.jpg
+Current Status: PLACEHOLDER (solid gradient)
+Dimensions: 1920x600px (16:9 landscape)
+Description: 
+  - Professional image of school building exterior or students at graduation
+  - Should convey excellence, community, and educational pride
+  - Sunrise/sunset golden hour lighting recommended
+  - Consider composite with students in foreground, school building in background
+
+HTML Reference:
+  <section class="hero" style="background-image: url('media/hero/hero-bg.jpg');">
+
+Alternative: Consider video background
+  - File: media/hero/hero-video-bg.mp4
+  - Duration: 10-15 seconds, looping
+  - Aspect ratio: 16:9
+  - File size: <5MB
+
+================================================================================
+HOMEPAGE (index.html) - QUICK ACCESS CARDS
+================================================================================
+
+Location: Quick access cards section (4 cards below hero)
+Status: PLACEHOLDER (no images required - text-based)
+Note: These can remain icon-based or add subtle background patterns
+
+================================================================================
+HOMEPAGE (index.html) - NEWS PREVIEW SECTION  
+================================================================================
+
+Location: "Latest News" preview cards (3 items)
+Number of Images: 3 news item thumbnails
+Directory: media/news/
+Files Expected:
+  - news-item-1.jpg (Science fair 2024)
+  - news-item-2.jpg (Sports tournament)
+  - news-item-3.jpg (Cultural day)
+Dimensions: 400x250px (16:10 aspect ratio)
+Description: Recent school events, achievements, or announcements
+HTML Reference:
+  <img src="media/news/news-item-1.jpg" alt="Science Fair 2024 Winners">
+
+================================================================================
+2. ABOUT PAGE (about.html)
+================================================================================
+
+--- 2.1 Leadership Section ---
+Location: Leadership team profiles (3 cards)
+Directory: media/about/
+
+File 1: principal.jpg
+Title: Principal
+Dimensions: 300x400px (portrait)
+Description: Portrait photograph of the school Principal in professional attire
+Alt Text: "Principal of Makindye Secondary School"
+
+File 2: deputy-principal.jpg
+Title: Deputy Principal
+Dimensions: 300x400px (portrait)
+Description: Portrait photograph of the Deputy Principal
+Alt Text: "Deputy Principal of Makindye Secondary School"
+
+File 3: head-academics.jpg
+Title: Head of Academics
+Dimensions: 300x400px (portrait)
+Description: Portrait photograph of the Head of Academic Programs
+Alt Text: "Head of Academics at Makindye Secondary School"
+
+--- 2.2 Facilities Section ---
+Location: School facilities grid (4 images)
+Directory: media/about/
+
+File 4: classroom.jpg
+Dimensions: 500x350px
+Description: Modern classroom with students and teacher, showing teaching aids and technology
+Alt Text: "Modern Classroom Facilities"
+
+File 5: laboratory.jpg
+Dimensions: 500x350px
+Description: Science laboratory with equipment, safety features, and student activity
+Alt Text: "Science Laboratory with Modern Equipment"
+
+File 6: library.jpg
+Dimensions: 500x350px
+Description: Library or resource center with books, study desks, and students
+Alt Text: "School Library and Resource Center"
+
+File 7: sports-field.jpg
+Dimensions: 500x350px
+Description: Sports field showing football pitch or athletics area with school buildings
+Alt Text: "Sports Field and Athletic Facilities"
+
+================================================================================
+3. ACADEMICS PAGE (academics.html)
+================================================================================
+
+--- 3.1 Header/Introduction Image ---
+Location: Top section, optional background
+Directory: media/academics/
+File: academics-header.jpg
+Dimensions: 1400x400px
+Description: Images of students studying, in laboratories, or classroom activities
+Status: OPTIONAL - can use solid color or gradient
+
+--- 3.2 O-Level Section Icon/Image ---
+Location: O-Level card (optional enhancement)
+Directory: media/academics/
+File: o-level-students.jpg
+Dimensions: 300x300px
+Description: Senior 1-4 students in classroom or study setting
+Alt Text: "O-Level Students Engaged in Study"
+
+--- 3.3 A-Level Section Icon/Image ---
+Location: A-Level card (optional enhancement)
+Directory: media/academics/
+File: a-level-students.jpg
+Dimensions: 300x300px
+Description: Senior 5-6 students in more advanced classroom/lab setting
+Alt Text: "A-Level Students in Advanced Studies"
+
+--- 3.4 Co-curricular Activities ---
+Location: Activities showcase grid (6 items minimum)
+Directory: media/academics/
+Files Expected:
+  - sports-activity.jpg (Team sports)
+  - debate-club.jpg (Debate or public speaking)
+  - science-club.jpg (Science activities)
+  - music-performance.jpg (Music/performing arts)
+  - environmental-club.jpg (Environmental/volunteer activity)
+  - leadership-program.jpg (Student leadership)
+Dimensions: 350x250px each
+Description: Students actively engaged in various clubs and programs
+HTML Pattern: <img src="media/academics/sports-activity.jpg" alt="Sports Activity">
+
+================================================================================
+4. ADMISSIONS PAGE (admissions.html)
+================================================================================
+
+--- 4.1 Header Section ---
+Location: Page top (optional background)
+Directory: media/admissions/
+File: admissions-header.jpg
+Dimensions: 1400x300px
+Description: Welcoming image of school entrance, new students, or campus tour
+Status: OPTIONAL
+
+--- 4.2 Admission Process Illustration ---
+Location: 6-step process section (optional visual enhancement)
+Directory: media/admissions/
+Files: Step-by-step visual guides (optional)
+  - step-1-inquiry.jpg
+  - step-2-application.jpg
+  - step-3-screening.jpg
+  - step-4-interview.jpg
+  - step-5-placement.jpg
+  - step-6-enrollment.jpg
+Dimensions: 200x150px each
+Description: Simplified icons or photographs representing each step
+Status: OPTIONAL - text-based steps are sufficient
+
+--- 4.3 Campus Tour / Facilities Photos ---
+Location: Under "Why Choose Makindye" section
+Directory: media/admissions/
+
+File 1: campus-overview.jpg
+Dimensions: 600x400px
+Description: Wide view of school campus showing multiple buildings
+Alt Text: "Makindye Secondary School Campus Overview"
+
+File 2: dormitory.jpg
+Dimensions: 600x400px
+Description: Student residential facilities (if applicable)
+Alt Text: "Student Dormitory Facilities"
+
+File 3: cafeteria.jpg
+Dimensions: 600x400px
+Description: School dining/feeding area with hygiene standards visible
+Alt Text: "School Cafeteria and Dining Facilities"
+
+File 4: computer-lab.jpg
+Dimensions: 600x400px
+Description: Computer lab with modern equipment and student workstations
+Alt Text: "Modern Computer Laboratory"
+
+================================================================================
+5. NEWS PAGE (news.html)
+================================================================================
+
+--- 5.1 Featured Story ---
+Location: Main featured news article (top)
+Directory: media/news/
+File: featured-story.jpg
+Dimensions: 800x500px
+Description: Large, impactful image of most recent major school event or achievement
+Alt Text: Specific to the featured story
+
+--- 5.2 News Articles Grid ---
+Location: Individual news item cards (minimum 6 cards)
+Directory: media/news/
+Files Expected:
+  - news-001.jpg  (Recent event)
+  - news-002.jpg  (Academic achievement)
+  - news-003.jpg  (Sports event)
+  - news-004.jpg  (Cultural event)
+  - news-005.jpg  (School activity)
+  - news-006.jpg  (Student highlight)
+Dimensions: 400x250px
+Description: Various school activities, achievements, and events
+Pattern: One image per news article
+
+--- 5.3 Academic Calendar Visual ---
+Location: Calendar section (optional)
+Directory: media/news/
+File: calendar-visual.jpg
+Dimensions: 600x400px
+Description: Visual representation of school calendar or term dates
+Status: OPTIONAL - text calendar is sufficient
+
+================================================================================
+6. RESOURCES PAGE (resources.html)
+================================================================================
+
+--- 6.1 Library Resources ---
+Location: Library information card section
+Directory: media/resources/
+
+File 1: library-interior.jpg
+Dimensions: 500x350px
+Description: Interior of library showing book shelves, reading areas, quiet study zones
+Alt Text: "School Library Interior"
+
+File 2: digital-resources.jpg
+Dimensions: 500x350px
+Description: Computer workstations or students using digital learning platforms
+Alt Text: "Digital Learning Resources"
+
+--- 6.2 Student Support ---
+Location: Counseling and support services
+Directory: media/resources/
+
+File 3: counseling-office.jpg
+Dimensions: 500x350px
+Description: Welcoming counselor's office or student support space
+Alt Text: "Student Counseling Services"
+
+File 4: tutoring-session.jpg
+Dimensions: 500x350px
+Description: Students receiving tutoring or academic support
+Alt Text: "Academic Tutoring and Support"
+
+--- 6.3 Career Guidance ---
+Location: Career development section
+Directory: media/resources/
+
+File 5: career-workshop.jpg
+Dimensions: 500x350px
+Description: Career fair, workshop, or professionals speaking with students
+Alt Text: "Career Guidance Workshop"
+
+File 6: career-showcase.jpg
+Dimensions: 500x350px
+Description: Students exploring different career pathways or alumni mentorship
+Alt Text: "Career Exploration and Planning"
+
+================================================================================
+7. CONTACT PAGE (contact.html)
+================================================================================
+
+--- 7.1 Campus Location / Map ---
+Location: Top section, location visualization
+Directory: media/contact/
+File: campus-map.jpg OR campus-entrance.jpg
+Dimensions: 600x400px
+Description: Either an aerial map view of campus or entrance gate photograph
+Alt Text: "Makindye Secondary School Location" or "School Entrance"
+
+--- 7.2 School Building Exterior ---
+Location: Optional contact page header
+Directory: media/contact/
+File: building-exterior.jpg
+Dimensions: 800x500px
+Description: Main school building or school sign frontal view
+Alt Text: "Makindye Secondary School Building"
+
+--- 7.3 Office/Reception Area ---
+Location: Within contact information section
+Directory: media/contact/
+File: reception-area.jpg
+Dimensions: 500x350px
+Description: Main office or reception area for visitor/student reference
+Alt Text: "Main Reception and Office Area"
+
+================================================================================
+8. GLOBAL/SITE-WIDE ASSETS
+================================================================================
+
+--- 8.1 Logo/Branding ---
+Location: Navbar and footers
+Directory: media/branding/
+Files: 
+  - logo.png (recommended format for logos)
+  - logo-white.png (for dark backgrounds)
+Dimensions: 150x150px (scalable SVG preferred)
+Status: Not implemented yet - can be added if branding is formalized
+
+--- 8.2 Background Patterns/Textures ---
+Directory: media/patterns/
+Status: Currently using CSS gradients - can add subtle texture overlays if desired
+
+================================================================================
+IMPLEMENTATION CHECKLIST
+================================================================================
+
+Essential (High Priority - Core Experience):
+☐ media/hero/hero-bg.jpg - Homepage hero background
+☐ media/about/principal.jpg - Principal portrait
+☐ media/about/deputy-principal.jpg - Deputy Principal portrait
+☐ media/about/classroom.jpg - Classroom facilities
+☐ media/about/laboratory.jpg - Science lab
+☐ media/admissions/campus-overview.jpg - Campus exterior
+☐ media/contact/building-exterior.jpg - Main building
+☐ media/news/featured-story.jpg - Latest news image
+
+Important (Medium Priority - Content Enhancement):
+☐ media/academics/o-level-students.jpg - O-Level representation
+☐ media/academics/a-level-students.jpg - A-Level representation
+☐ media/news/ (6 news item images) - News article thumbnails
+☐ media/resources/library-interior.jpg - Library facilities
+☐ media/admissions/ (4 facilities images) - Admissions attraction
+
+Optional (Low Priority - Nice-to-Have):
+☐ media/academics/ (6 co-curricular activity images)
+☐ media/resources/ (remaining support service images)
+☐ media/contact/ (office/reception photos)
+☐ Video assets (hero background video)
+
+================================================================================
+CONTENT CREATION GUIDELINES
+================================================================================
+
+Photography Style:
+- Professional, well-lit images (avoid shadows/poor lighting)
+- Composition should be balanced and engaging
+- Include people/students where possible (shows community)
+- Avoid overly staged or artificial-looking photos
+- Natural, authentic school environment preferred
+
+Requirements for Success:
+- Ensure proper consent/permissions for student photos
+- Include diverse representation of students and staff
+- High resolution originals (can be compressed for web)
+- Consistent color temperature across images
+- Image quality minimum: 72 DPI for web (300 DPI source recommended)
+
+Quality Standards:
+- No blurry, pixelated, or obviously Photoshopped images
+- Consistent lighting and color balance
+- Professional composition and framing
+- Avoid copyrighted or stock-heavy appearance
+
+================================================================================
+UPLOADING INSTRUCTIONS
+================================================================================
+
+Step 1: Prepare Media Files
+  - Optimize images to appropriate dimensions
+  - Compress using TinyPNG (reduce file size)
+  - Name files according to convention above
+  - Place in appropriate /media/subdirectory/
+
+Step 2: Update HTML References
+  - Add <img> tags with src pointing to media files
+  - Include meaningful alt text for accessibility
+  - Use proper HTML5 <figure> and <figcaption> if captions needed
+
+Step 3: Test
+  - Check that images load correctly in browser
+  - Verify alt text displays when images don't load
+  - Test on mobile devices for proper responsive display
+
+Step 4: Optimize
+  - Use browser dev tools to check image load times
+  - Consider lazy loading for off-screen images
+  - Monitor page performance (target <3 second load)
+
+================================================================================
+FUTURE ENHANCEMENTS
+================================================================================
+
+Suggested Additions:
+- Video tours of school facilities
+- Student testimonial videos
+- Animated school logo (if used)
+- Photo gallery/lightbox for news and events
+- Virtual campus tour
+- 360° photos of key facilities
+- Interactive campus map with building information
+
+================================================================================
+CONTACT & SUPPORT
+================================================================================
+
+For questions about image specifications or placement, refer to the HTML 
+comments in each page marked with <!-- MEDIA: [filename] -->
+
+Technical Support:
+- Browser compatibility: Test in Chrome, Firefox, Safari, Edge
+- Mobile optimization: Test on iOS and Android devices
+- Accessibility: Verify all images have descriptive alt text
+
+Last Updated: [Current Date - to be updated]
+Maintained By: [Web Administrator Contact]
+
+================================================================================

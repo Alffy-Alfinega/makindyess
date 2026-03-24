@@ -1,4 +1,8 @@
-// Mobile Navigation Toggle
+// ========================================
+// MAKINDYE SECONDARY SCHOOL - JS ENHANCEMENTS
+// ========================================
+
+// 1. MOBILE NAVIGATION
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
