@@ -1,30 +1,36 @@
 /* ========================================
-   MAKINDYE SECONDARY SCHOOL - MODERN DESIGN
+   MAKINDYE SECONDARY SCHOOL - AUTHENTIC COLORS
    ======================================== */
 
 :root {
-    --primary-900: #3d2914;
-    --primary-800: #4d3420;
-    --primary-700: #6B4423;
-    --primary-600: #7d5d45;
-    --primary-500: #8f6d55;
-    --accent-500: #F5EFE0;
-    --accent-400: #EAD8C0;
+    /* AUTHENTIC BROWNS (From Skirts/Trousers/Ties) */
+    --primary-900: #4a1d12; /* Deep Shadow Brown */
+    --primary-800: #7d331b; /* Rich Dark Terracotta */
+    --primary-700: #A64B2A; /* PRIMARY BRAND BROWN (The Uniform Color) */
+    --primary-600: #bc6447; /* Lighter Terracotta */
+    --primary-500: #d17e65; /* Muted Highlight */
+
+    /* AUTHENTIC CREAMS (From the Shirts) */
+    --accent-500: #F9F3D0; /* PRIMARY BRAND CREAM (Shirt Color) */
+    --accent-400: #F0E6A8; /* Deeper Cream / Gold Tint */
+    
+    /* SYSTEM COLORS - Warmed up to match the theme */
     --success-500: #06a77d;
     --danger-500: #e63946;
-    --neutral-50: #faf9f7;
-    --neutral-100: #f5f1ec;
-    --neutral-200: #e8dfd5;
+    --neutral-50:  #fffdfa;
+    --neutral-100: #f7f3ed;
+    --neutral-200: #ece4d9;
     --neutral-300: #d9ccbe;
     --neutral-400: #b8a896;
     --neutral-600: #6b5d4f;
-    --neutral-700: #483c2f;
-    --neutral-900: #2a1f15;
+    --neutral-700: #4a3c32; /* Warm dark text */
+    --neutral-900: #2a1b15; /* Deep Espresso for headings */
     
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    /* UI ELEMENTS */
+    --shadow-sm: 0 1px 2px rgba(74, 29, 18, 0.05);
+    --shadow-md: 0 4px 6px rgba(74, 29, 18, 0.1);
+    --shadow-lg: 0 10px 15px rgba(74, 29, 18, 0.1);
+    --shadow-xl: 0 20px 25px rgba(74, 29, 18, 0.1);
     
     --radius-sm: 6px;
     --radius-md: 8px;
