@@ -214,6 +214,52 @@ p {
     border-radius: 3px 3px 0 0;
 }
 
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all var(--transition-fast);
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 1100;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    display: block;
+    color: var(--neutral-600);
+    font-size: 0.9rem;
+    transition: background var(--transition-fast);
+}
+
+.dropdown-item:hover {
+    background: rgba(92, 26, 26, 0.05);
+    color: var(--primary-700);
+}
+
+.nav-link i {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
